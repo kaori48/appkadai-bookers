@@ -1,0 +1,11 @@
+<!--投稿が成功した場合に表示  -->
+<p>"Book was successfully created"</p>
+<p>
+	<strong>Title:</strong><%= @book.title %>
+ </p>
+<p>
+	<strong>Body:</strong><%= @book.body %>
+</p>
+
+<%= link_to "Edit", edit_book_path %> |
+<%= link_to "Back", books_path %>
