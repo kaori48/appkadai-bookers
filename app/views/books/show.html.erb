@@ -1,6 +1,6 @@
-<!--投稿が成功した場合に表示  -->
-<p>"Book was successfully created"</p>
-<p>
+  <% if flash[:ok] %>
+      <p><%= flash[:ok] %></p>
+   <% end %>
 	<strong>Title:</strong><%= @book.title %>
  </p>
 <p>
